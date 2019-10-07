@@ -29,85 +29,6 @@
         android:textSize="18dp" />
 
     <TextView
-        android:id="@+id/textViewBlank2"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textViewBlank"
-        android:background="@color/display"
-        android:text=" Name: Tyskie Gronie                   \n Factory: Browar Tyskie"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18dp" />
-
-    <TextView
-        android:id="@+id/textViewBlank3"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textViewBlank2"
-        android:background="@color/display"
-        android:text=" Name: Zywiec APA                      \n Factory: Browar Zywiec"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18dp" />
-
-    <TextView
-        android:id="@+id/textViewBlank4"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textViewBlank3"
-        android:background="@color/display"
-        android:text=" Name: Zywiec IPA                      \n Factory: Browar Zywiec"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18dp" />
-
-    <TextView
-        android:id="@+id/textViewBlank5"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textViewBlank7"
-        android:background="@color/display"
-        android:text=" Name: Raciborskie Pils              \n Factory: Browar Raciborski"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18dp" />
-
-    <TextView
-        android:id="@+id/textViewBlank6"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textViewBlank4"
-        android:background="@color/display"
-        android:text=" Name: Raciborskie Klasyczne   \n Factory: Browar Raciborski"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18dp" />
-
-    <TextView
-        android:id="@+id/textViewBlank7"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textViewBlank6"
-        android:background="@color/display"
-        android:text=" Name: Zywiec Porter                   \n Factory: Browar Zywiec"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18dp" />
-
-    <TextView
-        android:id="@+id/textViewDetails"
-        android:layout_width="109dp"
-        android:layout_height="36dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="36dp"
-        android:layout_marginTop="79dp"
-        android:background="@color/display"
-        android:text="Remove"
-        android:textColor="@color/colorAccent"
-        android:textSize="18dp" />
-
-    <TextView
         android:id="@+id/textViewBackToMenu"
         android:layout_width="383dp"
         android:layout_height="30dp"
@@ -120,11 +41,34 @@
         android:textColor="@color/colorAccent"
         android:textSize="18dp"
         tools:text="Return to Menu" />
-<!--
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="459dp"
-        android:layout_centerInParent="true" />
--->
+
+    <ListView
+        android:id="@+id/valuesList"
+        android:layout_width="387dp"
+        android:layout_height="494dp"
+        android:layout_alignTop="@+id/textViewTitle"
+        android:layout_alignBottom="@+id/textViewBackToMenu"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="145dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.934" />
+    <!--
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="459dp"
+            android:layout_centerInParent="true" />
+    -->
 </RelativeLayout>

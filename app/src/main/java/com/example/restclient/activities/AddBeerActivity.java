@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.restclient.R;
-import com.example.restclient.api.RetrofitClient;
 import com.example.restclient.models.DefaultResponse;
 
 import retrofit2.Call;
@@ -83,7 +82,7 @@ public class AddBeerActivity extends AppCompatActivity implements View.OnClickLi
             return;
         }
 
-        Call<DefaultResponse> call = RetrofitClient
+        Call<DefaultResponse> call = BeerApi
                 .getmRetrofitClient()
                 .getApi()
                 .addBeer(beerName, factory, ibu, abv, calorie, style, price, details);

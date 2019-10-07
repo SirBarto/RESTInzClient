@@ -10,7 +10,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.restclient.R;
-import com.example.restclient.api.RetrofitClient;
 import com.example.restclient.models.DefaultResponse;
 
 import retrofit2.Call;
@@ -91,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-        Call<DefaultResponse> call = RetrofitClient
+        Call<DefaultResponse> call = BeerApi
                 .getmRetrofitClient()
                 .getApi()
                 .createUser(email, login, password, name, lastName);

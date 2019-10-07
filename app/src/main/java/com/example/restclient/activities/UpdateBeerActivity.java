@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.restclient.R;
-import com.example.restclient.api.RetrofitClient;
 import com.example.restclient.models.DefaultResponse;
 
 import retrofit2.Call;
@@ -50,7 +49,7 @@ public class UpdateBeerActivity extends AppCompatActivity implements View.OnClic
         String style = editTextStyle.getText().toString().trim();
         double price = Double.parseDouble(editTextPrice.getText().toString().trim());
         String details = editTextDetails.getText().toString().trim();
-        Call<DefaultResponse> call = RetrofitClient
+        Call<DefaultResponse> call = BeerApi
                 .getmRetrofitClient()
                 .getApi()
                 .updateBeer(id, beerName, factory, ibu, abv, calorie, style, price, details);

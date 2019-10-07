@@ -1,8 +1,11 @@
 package com.example.restclient.api;
 
+import com.example.restclient.models.Beer;
 import com.example.restclient.models.BeerResponse;
 import com.example.restclient.models.DefaultResponse;
 import com.example.restclient.models.LoginResponse;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.Field;
@@ -58,5 +61,5 @@ public interface Api {
     );
 
     @GET("beer/all")
-    Call<BeerResponse>getBeers();
+    Call<List<Beer>>getBeers();
 }

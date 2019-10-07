@@ -8,7 +8,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.restclient.R;
-import com.example.restclient.api.RetrofitClient;
 import com.example.restclient.models.LoginResponse;
 import com.example.restclient.storage.SharedPrefManager;
 
@@ -55,7 +54,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             return;
         }
 
-        Call<LoginResponse>call = RetrofitClient.getmRetrofitClient().getApi().userLogin(login,password);
+        Call<LoginResponse>call = BeerApi.getmRetrofitClient().getApi().userLogin(login,password);
 
         call.enqueue(new Callback<LoginResponse>() {
             @Override
