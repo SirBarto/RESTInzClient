@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ItemViewActivity"
+    android:background="@color/mainbackgroudn">
+
+    <EditText
+        android:id="@+id/editTextViewNameBeer"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/display"
+        android:text="Raciborskie Pils"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Name Beer" />
+
+    <EditText
+        android:id="@+id/editTextViewFactory"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextViewNameBeer"
+        android:background="@color/display"
+        android:text="Browar Racibórz"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Factory" />
+
+    <EditText
+        android:id="@+id/editTextViewIbu"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextViewFactory"
+        android:layout_toEndOf="@+id/editTextViewStyle"
+        android:background="@color/display"
+        android:text="IBU 14"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="IBU" />
+
+    <EditText
+        android:id="@+id/editTextViewAbv"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editTextViewNameBeer"
+        android:layout_marginEnd="0dp"
+        android:background="@color/display"
+        android:text="4.5 %"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Abv" />
+
+    <EditText
+        android:id="@+id/editTextViewColories"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextViewFactory"
+        android:background="@color/display"
+        android:text="215 cal"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Calories" />
+
+    <EditText
+        android:id="@+id/editTextViewStyle"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextViewFactory"
+        android:layout_toEndOf="@+id/editTextViewColories"
+        android:background="@color/display"
+        android:text="Style: Pils"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Style" />
+
+    <EditText
+        android:id="@+id/editTextViewPrice"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/display"
+        android:text="4.25 PLN"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Price" />
+
+    <EditText
+        android:id="@+id/editTextViewDetails"
+        android:layout_width="285dp"
+        android:layout_height="128dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextViewIbu"
+        android:background="@color/display"
+        android:text="Piwo jasne pasteryzowane \n woda i słody jęczmienne"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Details" />
+<!--
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="334dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp" />
+-->
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="98dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editTextViewFactory"
+        android:text="Update"
+        android:textColor="@color/colorAccent"
+        tools:text="Update" />
+
+    <Button
+        android:id="@+id/buttonAddComment"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/buttonUpdate"
+        android:text="Add Comment"
+        android:textColor="@color/colorAccent"
+        tools:text="Add Comment" />
+
+    <Button
+        android:id="@+id/buttonAddToFavourite"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextViewDetails"
+        android:layout_alignParentEnd="true"
+        android:text="Add to My List"
+        android:textColor="@color/colorAccent"
+        tools:text="Add to My LIst" />
+
+    <TextView
+        android:id="@+id/textViewBlank"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextViewDetails"
+        android:background="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewBlank1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewBlank"
+        android:background="@color/display"
+        android:text=" Author: Jan12                  Created at: 2019-01-15\n moze byc"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewBlank2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewBlank1"
+        android:background="@color/display"
+        android:text=" Author: User1                  Created at: 2019-01-14\n Polecam produkt"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewBlank3"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewBlank2"
+        android:background="@color/display"
+        android:text=" Author: Admin                  Created at: 2019-01-10\n Smak przeciętny"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewBackToMenu"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/register"
+        android:text="Return to Menu"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        tools:text="Return to Menu" />
+
+</RelativeLayout>

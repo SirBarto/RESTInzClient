@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AboutViewActivity"
+    android:background="@color/mainbackgroudn">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="340dp"
+        android:layout_height="167dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="153dp"
+        android:background="@color/register"
+        android:text="Politechnika Śląska\n Wydział Elektryczny \nInformatyka \nProjekt inżynierski \n Bartosz Gawron \n 2019 \n Beer Rating v1.0"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        tools:text="Politechnika Śląska\n Wydział Elektryczny \nInformatyka \nProjekt inżynierski \n Bartosz Gawron \n 2019 \n Beer Rating v1.0" />
+
+    <TextView
+        android:id="@+id/textViewBackToMenu"
+        android:layout_width="340dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="198dp"
+        android:background="@color/register"
+        android:text="Return to Menu"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        tools:text="Return to Menu" />
+
+</RelativeLayout>

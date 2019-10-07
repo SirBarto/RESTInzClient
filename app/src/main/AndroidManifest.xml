@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.restclient">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Projekt Inżynierski 2019 Bartosz Gawron"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.FullListViewActivity" />
+        <activity android:name=".activities.SearchViewActivity" />
+        <activity android:name=".activities.MyListViewActivity" />
+        <activity android:name=".activities.AboutViewActivity" />
+        <activity android:name=".activities.ItemViewActivity" />
+        <activity android:name=".activities.AddComentViewActivity" />
+        <activity android:name=".activities.UpdateAccountViewActivity" />
+        <activity android:name=".activities.AddBeerActivity" />
+        <activity android:name=".activities.MenuViewActivity" />
+        <activity android:name=".StaticActivity" />
+        <activity android:name=".activities.UpdateBeerActivity" />
+        <activity android:name=".ListItem" />
+        <activity android:name=".AdminPanel" />
+        <activity android:name=".activities.MainActivity"/>
+    </application>
+
+</manifest>

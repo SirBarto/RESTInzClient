@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StaticActivity"
+    android:background="@color/mainbackgroudn">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Statistics List"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textViewFactory"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textViewStatic1"
+        android:layout_marginTop="189dp"
+        android:text="Factory"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editTextViewFactory"
+        android:layout_width="148dp"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@+id/textViewFactory"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="35dp"
+        android:background="@color/register"
+        android:textAlignment="center"
+        android:text="type here"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textViewStatic1"
+        android:layout_width="340dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="241dp"
+        android:background="@color/register"
+        android:text="Best Beer by Factory"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        tools:text="Best Beer by Factory" />
+
+    <TextView
+        android:id="@+id/textViewStatic2"
+        android:layout_width="340dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="251dp"
+        android:background="@color/register"
+        android:text="Top 10"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        tools:text="Top 10" />
+
+
+    <TextView
+        android:id="@+id/textViewStatic3"
+        android:layout_width="340dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="204dp"
+        android:background="@color/register"
+        android:text="Count Beer by Factories"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        tools:text="Count Beer by Factories" />
+
+    <TextView
+        android:id="@+id/textViewBackToMenu"
+        android:layout_width="381dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/register"
+        android:text="Return to Menu"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        tools:text="Return to Menu" />
+
+
+</RelativeLayout>

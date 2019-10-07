@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UpdateAccountViewActivity"
+    android:background="@color/mainbackgroudn">
+
+    <TextView
+        android:id="@+id/textViewTitle7"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextViewEmail"
+        android:layout_marginEnd="-38dp"
+        android:layout_toStartOf="@+id/textView"
+        android:text="Email Adress"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewTitle6"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewTitle7"
+        android:layout_alignTop="@+id/editTextViewLogin"
+        android:text="User Login"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewTitle5"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewTitle7"
+        android:layout_alignTop="@+id/editTextViewPassword"
+        android:text="Password"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewTitle4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextViewPassword2"
+        android:layout_toStartOf="@+id/editTextViewEmail"
+        android:text="Confirm Password"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewTitle3"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewTitle7"
+        android:layout_alignTop="@+id/editTextViewName"
+        android:text="User Name"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewTitle7"
+        android:layout_alignTop="@+id/editTextViewLastName"
+        android:text="User LastName"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="137dp"
+        android:text="My Profile"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editTextViewEmail"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="192dp"
+        android:background="@color/register"
+        android:text="test12@polsl.pl"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="email" />
+
+    <EditText
+        android:id="@+id/editTextViewLogin"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editTextViewEmail"
+        android:layout_marginTop="225dp"
+        android:background="@color/register"
+        android:text="tester12"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="login" />
+
+    <EditText
+        android:id="@+id/editTextViewPassword"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editTextViewEmail"
+        android:layout_marginTop="258dp"
+        android:background="@color/register"
+        android:text="***********"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="password" />
+
+    <EditText
+        android:id="@+id/editTextViewPassword2"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextViewEmail"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="243dp"
+        android:background="@color/register"
+        android:text="***********"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="confirm password" />
+
+    <EditText
+        android:id="@+id/editTextViewName"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editTextViewEmail"
+        android:layout_marginBottom="204dp"
+        android:background="@color/register"
+        android:text="Jan"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="name" />
+
+    <EditText
+        android:id="@+id/editTextViewLastName"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editTextViewEmail"
+        android:layout_marginBottom="165dp"
+        android:background="@color/register"
+        android:text="Kowalski"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="lastname" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp"
+        android:text="Update profile"
+        tools:text="Update profile" />
+
+    <TextView
+        android:id="@+id/textViewBackToMenu"
+        android:layout_width="381dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/register"
+        android:text="Return to Menu"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        tools:text="Return to Menu" />
+
+</RelativeLayout>

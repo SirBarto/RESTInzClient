@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddComentViewActivity"
+    android:background="@color/mainbackgroudn">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="291dp"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Add Comment"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="22dp"
+        tools:text="Add Comment" />
+
+    <TextView
+        android:id="@+id/textViewTitle2"
+        android:layout_width="179dp"
+        android:layout_height="41dp"
+        android:layout_alignStart="@+id/textViewTitle"
+        android:layout_alignTop="@+id/editTextViewScore"
+        android:text="Score"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="22dp"
+        tools:text="Score" />
+
+    <EditText
+        android:id="@+id/editTextViewDetails"
+        android:layout_width="288dp"
+        android:layout_height="307dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@color/register"
+        android:text="Produkt 8/10 \n Polecam"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Comment" />
+
+    <EditText
+        android:id="@+id/editTextViewScore"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_alignEnd="@+id/textViewTitle"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="95dp"
+        android:background="@color/register"
+        android:text="5"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:text="Save"
+        tools:text="Save" />
+
+    <TextView
+        android:id="@+id/textViewBackToMenu"
+        android:layout_width="381dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/register"
+        android:text="Return to Menu"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        tools:text="Return to Menu" />
+
+</RelativeLayout>

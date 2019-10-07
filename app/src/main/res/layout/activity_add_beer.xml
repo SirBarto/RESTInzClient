@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddBeerActivity"
+    android:background="@color/mainbackgroudn">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="381dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:text="Add new Beer"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="22dp"
+        tools:text="Add new Beer" />
+
+    <EditText
+        android:id="@+id/editTextViewNameBeer"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="134dp"
+        android:background="@color/register"
+        android:text="Name Beer"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/editTextViewFactory"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:background="@color/register"
+        android:text="Factory"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/editTextViewIbu"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editTextViewNameBeer"
+        android:layout_marginTop="221dp"
+        android:background="@color/register"
+        android:text="IBU"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/editTextViewAbv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editTextViewIbu"
+        android:layout_marginStart="137dp"
+        android:background="@color/register"
+        android:text="Abv"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/editTextViewColories"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextViewNameBeer"
+        android:layout_centerVertical="true"
+        android:background="@color/register"
+        android:text="Calories"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/editTextViewStyle"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextViewNameBeer"
+        android:layout_centerVertical="true"
+        android:background="@color/register"
+        android:text="Style"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/editTextViewPrice"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextViewIbu"
+        android:layout_toEndOf="@+id/buttonSave"
+        android:background="@color/register"
+        android:text="Price"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/editTextViewDetails"
+        android:layout_width="288dp"
+        android:layout_height="153dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@color/register"
+        android:text="Details"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:text="Save"
+        tools:text="Save" />
+
+    <TextView
+        android:id="@+id/textViewBackToMenu"
+        android:layout_width="381dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/register"
+        android:text="Return to Menu"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        tools:text="Return to Menu" />
+
+
+</RelativeLayout>

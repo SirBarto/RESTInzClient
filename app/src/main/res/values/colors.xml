@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#e90880</color>
+    <color name="mainbackgroudn">#595857</color>
+    <color name="register">#e4ded5</color>
+    <color name="display">#f9f8f6</color>
+    <color name="splashscreen">#251f21</color>
+    <color name="btn">#706367</color>
+    <color name="textlabel">#d7cfd1</color>
+
+
+    <color name="view">#244dd6</color>
+    <color name="search">#22bf46</color>
+    <color name="statistic">#13a177</color>
+    <color name="favourite">#ba2121</color>
+    <color name="my_account">#176fc6</color>
+    <color name="about_app">#1f90c4</color>
+    <color name="blank">#8e8b84</color>
+    <color name="logout">#c75650</color>
+
+    <color name="admin_panel">#a93838</color>
+
+
+</resources>

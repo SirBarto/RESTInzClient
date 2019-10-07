@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UpdateBeerActivity"
+    android:background="@color/mainbackgroudn">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="291dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:text="Update Beer"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="22dp"
+        tools:text="Update Beer" />
+
+    <TextView
+        android:id="@+id/textViewTitle1"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Beer Name"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewTitle2"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="148dp"
+        android:text="Factory"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewTitle3"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextViewIbu"
+        android:layout_toStartOf="@+id/editTextViewIbu"
+        android:text="IBU"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewTitle4"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextViewIbu"
+        android:layout_toStartOf="@+id/editTextViewAbv"
+        android:text="Abv"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewTitle5"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextViewColories"
+        android:layout_alignTop="@+id/editTextViewIbu"
+        android:text="Price"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewTitle6"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/editTextViewColories"
+        android:text="Style"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewTitle7"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextViewNameBeer"
+        android:layout_centerVertical="true"
+        android:text="Calorie"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/editTextViewIdBeer"
+        android:layout_width="53dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textViewTitle"
+        android:layout_marginEnd="29dp"
+        android:background="@color/register"
+        android:text="8"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="ID" />
+
+    <EditText
+        android:id="@+id/editTextViewNameBeer"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:background="@color/register"
+        android:text="Raciborskie Pils"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Name Beer" />
+
+    <EditText
+        android:id="@+id/editTextViewFactory"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:background="@color/register"
+        android:text="Browar Racibórz"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Factory" />
+
+    <EditText
+        android:id="@+id/editTextViewIbu"
+        android:layout_width="39dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="-82dp"
+        android:layout_marginTop="221dp"
+        android:layout_toStartOf="@+id/editTextViewColories"
+        android:background="@color/register"
+        android:text="14"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="IBU" />
+
+    <EditText
+        android:id="@+id/editTextViewAbv"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextViewIdBeer"
+        android:layout_alignTop="@+id/editTextViewIbu"
+        android:background="@color/register"
+        android:text="4.5 %"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Abv" />
+
+    <EditText
+        android:id="@+id/editTextViewColories"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextViewNameBeer"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="82dp"
+        android:background="@color/register"
+        android:text="215"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Calories" />
+
+    <EditText
+        android:id="@+id/editTextViewStyle"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextViewNameBeer"
+        android:layout_centerVertical="true"
+        android:background="@color/register"
+        android:text="Pils"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Style" />
+
+    <EditText
+        android:id="@+id/editTextViewPrice"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextViewIbu"
+        android:layout_toEndOf="@+id/editTextViewColories"
+        android:background="@color/register"
+        android:text="4.25"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Price" />
+
+    <EditText
+        android:id="@+id/editTextViewDetails"
+        android:layout_width="288dp"
+        android:layout_height="153dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@color/register"
+        android:text="Details"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Piwo jasne pasteryzowane \n woda i słody jęczmienne" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:text="Update"
+        tools:text="Update" />
+
+    <TextView
+        android:id="@+id/textViewBackToMenu"
+        android:layout_width="381dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/register"
+        android:text="Return to Menu"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        tools:text="Return to Menu" />
+
+</RelativeLayout>
